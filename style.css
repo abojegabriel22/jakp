@@ -453,7 +453,13 @@ header.show-topbar{
 }
 
 /* -------------------------------------footer  */
+.footer{
+    overflow-x:hidden;
+}
 /* CONTACT */
+.contact-section{
+    overflow-x:hidden !important;
+}
 .contact-form-area input,
 .contact-form-area textarea{
     border:none;
@@ -504,6 +510,9 @@ header.show-topbar{
     border:1px solid #eee;
     padding:25px;
     border-radius:10px;
+}
+.blog-section{
+    overflow-x: hidden;
 }
 
 /* BLOG */
