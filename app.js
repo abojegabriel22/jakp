@@ -19,3 +19,16 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+
+// Close navbar dropdown when a nav link is clicked
+const navbarCollapse = document.querySelector('.navbar-collapse');
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    if (navbarCollapse.classList.contains('show')) {
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      navbarToggler.click();
+    }
+  });
+});
